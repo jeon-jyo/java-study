@@ -1,0 +1,23 @@
+1689834594431	Rename type 'NoteBook'
+1689834665044	Rename type 'NoteBook02'
+1689908150124	Delete element
+1689908162060	Delete element
+1689909003637	Delete element
+1689911352965	Rename type 'PostgreSQL'
+1689911422672	Rename type 'PostgreSQLUserInfoDAO'
+1689911430719	Rename type 'OracleDAO'
+1689911459353	Rename type 'PostgreSQLDAOImpl'
+1689912236759	Move compilation unit
+1689912268126	Move compilation unit
+1689912271012	Copy package
+1689912277893	Copy package
+1689912295099	Move compilation unit
+1689912315188	Move compilation unit
+1689912323712	Delete element
+1689912366728	Delete element
+1689912388829	Delete element
+1689912564022	Move compilation unit
+1689917985856	Copy compilation unit
+1689918006279	Rename type 'OracleDAOImpl'
+1689918678434	Rename package 'kr.co.userinfo.server.dao.musql'
+1689920838774	Copy package

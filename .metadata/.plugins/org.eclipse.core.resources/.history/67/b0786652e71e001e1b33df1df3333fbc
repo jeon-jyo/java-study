@@ -1,0 +1,10 @@
+package kr.co.loop04;
+
+public class WhileTest03 {
+
+	public static void main(String[] args) {
+		
+		// 1. 증속
+		
+	}
+}

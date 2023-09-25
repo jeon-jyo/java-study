@@ -1,0 +1,12 @@
+package kr.co.encapsulation;
+
+public class DisplayAddress {
+	
+	// 참조형 변수 참조타입
+	// 
+	/*
+	 * A thread-safe, mutable sequence of characters.
+	 */
+	StringBuffer buffer = new StringBuffer();
+
+}

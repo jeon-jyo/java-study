@@ -1,0 +1,39 @@
+package kr.co.clazz;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+
+public class RefectTest {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		
+		/*
+		 * Class.forName()
+		 *  - 지정된 문자열 이름을 가진 클래스 또는 인터페이스와 연결된 클래스 객체를 반환합니다.
+		 * 
+		 * 컴파일 단계 x 런타임 때 실행
+		 */
+		
+		// 메모리상에 있는것을 볼 수 있음
+		
+		/*
+		 * .class 파일 안에 있는것들을 동적으로 로딩해서
+		 * 안에 있는 것들을 확인
+		 */
+
+		// String.class 클래스를 동적으로 로드함
+		Class clazz = Class.forName("java.lang.String");
+		
+		Constructor<String>[] cons = clazz.getConstructors();
+		for(Constructor con : cons) {
+			System.out.println(con);
+		}
+		System.out.println();
+		Method[] methods = clazz.getMethods();
+		for(Method method : methods) {
+			System.out.println(method);
+		}
+		
+		
+	}
+}

@@ -1,0 +1,71 @@
+package kr.co.review;
+
+import java.util.Arrays;
+
+public class ArrayTest03 {
+
+	static int[] arr = new int[10];
+	
+	static {
+		for(int i = 0; i < 8; i++) {
+			arr[i] = (i+1);
+//			arr[i] = (int)(Math.random() * 10);
+		}
+		System.out.println(Arrays.toString(arr));	// [1, 2, 3, 4, 5, 6, 7, 8, 0, 0]
+	}
+	
+	
+	public static void main(String[] args) {
+		System.out.println(ArrayTest03.get(arr, 2));	// 3
+		
+		ArrayTest03.changeElement(arr, 0, 2024);
+		System.out.println(Arrays.toString(arr));	// [2024, 2, 3, 4, 5, 6, 7, 8, 0, 0]
+		
+		ArrayTest03.appendElement(arr, 8, 2025);
+		System.out.println(Arrays.toString(arr));	// [2024, 2, 3, 4, 5, 6, 7, 8, 2025, 0]
+
+		ArrayTest03.insertElement(arr, 9, 5, 2026);
+		System.out.println(Arrays.toString(arr));	// [2024, 2, 3, 4, 5, 2026, 6, 7, 8, 2025]
+		
+		ArrayTest03.removeElement(arr, 9, 5);
+		System.out.println(Arrays.toString(arr));	// [2024, 2, 3, 4, 5, 6, 7, 8, 2025, 2025]
+	}
+	
+	public static int get(int[] arr, int idx) {
+		return arr[idx];
+	}
+	
+	public static void changeElement(int[] arr, int idx, int val) {
+		arr[idx] = val;
+	}
+	
+	public static boolean appendElement(int[] arr, int arrCount, int val) {
+		if(arrCount >= arr.length) {
+			return false;
+		}
+		arr[arrCount] = val;
+		return true;
+	}
+	
+	public static boolean insertElement(int[] arr, int arrCount, int idx, int val) {
+		if(idx > arrCount || arrCount >= arr.length) {
+			return false;
+		}
+		for(int i = arrCount; i > idx; i--) {
+			arr[i] = arr[i-1];
+		}
+		arr[idx] = val;
+		return true;
+	}
+	
+	public static boolean removeElement(int[] arr, int arrCount, int idx) {
+		if(idx >= arrCount) {
+			return false;
+		}
+		for(int i = idx; i < arrCount; i++) {
+			arr[i] = arr[i+1];
+		}
+		return true;
+	}
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Person.java&apos; to &apos;Chap16(함수형 프로그래밍)/src/kr.co.lambda08&apos;&#x0D;&#x0A;- Original project: &apos;Chap12(JDK_API)&apos;&#x0D;&#x0A;- Destination element: &apos;Chap16(함수형 프로그래밍)/src/kr.co.lambda08&apos;&#x0D;&#x0A;- Original element: &apos;kr.co.clazz.Person.java&apos;" description="Copy compilation unit" destination="=Chap16\(함수형 프로그래밍)/src&lt;kr.co.lambda08" element1="/src&lt;kr.co.clazz{Person.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1690771076434" units="1" version="1.0"/>
+</session>

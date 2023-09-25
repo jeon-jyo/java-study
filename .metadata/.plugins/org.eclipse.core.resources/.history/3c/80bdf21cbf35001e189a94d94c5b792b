@@ -1,0 +1,11 @@
+package kr.co.prototype;
+
+class Book {
+	private String author;
+	private String title;
+	
+}
+
+public class PrototypeTest {
+
+}
